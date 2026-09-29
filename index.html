@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MBE · Modelo Bidireccional de Evaluación</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="contenedor">
+
+    <div class="banner-mbe">
+        <h1>MBE · Modelo Bidireccional de Evaluación</h1>
+        <div class="subtitulo">Tablero de resultados del análisis multimodal de video</div>
+        <div class="badges">
+            <span class="badge badge-blanco">SAED-CS_v2</span>
+            <span class="badge badge-blanco">P-VES</span>
+            <span class="badge badge-blanco">Pilar Pedagógico</span>
+        </div>
+    </div>
+
+    <div class="panel-filtros">
+        <div class="campo">
+            <label for="filtro-materia">Materia</label>
+            <select id="filtro-materia"></select>
+        </div>
+        <div class="campo">
+            <label for="filtro-fecha">Fecha</label>
+            <select id="filtro-fecha"></select>
+        </div>
+        <div class="campo" style="flex:0;min-width:auto;">
+            <label>&nbsp;</label>
+            <button id="btn-limpiar" type="button">Limpiar filtros</button>
+        </div>
+    </div>
+
+    <div id="contador" class="contador"></div>
+
+    <div id="contenido"></div>
+
+</div>
+
+<script src="js.js"></script>
+</body>
+</html>
